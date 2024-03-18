@@ -12,13 +12,14 @@ function App() {
 
       {/* Rest of your main content goes here */}
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '60vh' }}> {/* Styling for image section */}
-        <img src="/SurfAndTurf.jpeg" alt="Business Name" style={{ width: '100%' }} /> {/* Replace with your image path */}
+        <img src="/stock-image.png" alt="Business Name" style={{ width: '100%' }} /> {/* Replace with your image path */}
         <div style={{ position: 'absolute', color: 'white', padding: 20 }}> {/* Text overlay on image */}
           <Typography variant="h4" component="h1" sx={{ fontWeight: 'bold' }}>
-            MENU 8
+            Example Title{/* MENU 8 */}
           </Typography>
           <Typography variant="body1" component="p">
-            EXPERIENCE CULINARY ARTISTRY
+            Example Paragraph
+            {/* EXPERIENCE CULINARY ARTISTRY */}
           </Typography>
         </div>
       </div>

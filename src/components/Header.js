@@ -8,7 +8,8 @@ const Header = () => {
         <Typography variant="h6" noWrap component="div" sx={{ display: 'flex', alignItems: 'center' }}>
           
           <Typography variant="h6" noWrap component="span" sx={{ color: 'secondary.main', marginLeft: 1 }}>
-            Menu 8
+            Example Title
+            {/* Menu 8 */}
           </Typography>
         </Typography>
         <Button color="inherit" variant="outlined">
