@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { ThemeProvider, createTheme } from '@mui/material/styles';  
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline'; // CSS Reset
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom'; // Import BrowserRouter
 
 const theme = createTheme({
   // Basic customization (more later) 
@@ -11,16 +12,17 @@ const theme = createTheme({
     primary: {
       main: '#008080' // Example primary color
     }
-  } 
+  }
 })
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <ThemeProvider theme={theme}> 
-    <CssBaseline /> 
-    <App />
+  <ThemeProvider theme={theme}>
+    <CssBaseline />
+    <BrowserRouter> {/*  Wrap your App component with BrowserRouter */}
+      <App />
+    </BrowserRouter>
   </ThemeProvider>
 );
 
 reportWebVitals();
-// i want a header with business name, Menu 8, displayed on the left, on the right there is a navigaiton button, menu, and contact. below the header there is a main page with an image fitting the whole space w/ business name and paragraph description.
