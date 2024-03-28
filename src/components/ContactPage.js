@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Grid, TextField, Button, Typography } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
 function ContactPage() {
   const [formData, setFormData] = useState({
@@ -15,14 +16,17 @@ function ContactPage() {
     });
   };
 
+  const navigate = useNavigate();
+
   const handleSubmit = (event) => {
     event.preventDefault(); // Prevent default form submission behavior
-    console.log('Form data:', formData); 
-    // TODO: Handle form submission logic (e.g., sending data to a server)
+    console.log('Form data:', formData);
+
+    navigate('/confirmation');
   };
 
   return (
-    <div style={{ padding: 20 }}> 
+    <div style={{ padding: 20 }}>
       <Typography variant="h4" gutterBottom>
         Contact Us
       </Typography>
@@ -35,7 +39,7 @@ function ContactPage() {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              required 
+              required
             />
           </Grid>
           <Grid item xs={12}>
@@ -45,8 +49,8 @@ function ContactPage() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              required 
-              type="email" 
+              required
+              type="email"
             />
           </Grid>
           <Grid item xs={12}>
@@ -56,9 +60,9 @@ function ContactPage() {
               name="message"
               value={formData.message}
               onChange={handleChange}
-              required 
-              multiline 
-              rows={4} 
+              required
+              multiline
+              rows={4}
             />
           </Grid>
           <Grid item xs={12}>
