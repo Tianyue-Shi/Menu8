@@ -26,7 +26,7 @@ function AboutSection() {
                             About Us {/* Heading */}
                         </Typography>
                         <Typography variant="body1">
-                            Example Paragraph
+                            Example Paragraph in About Section
                             {/* Menu 8 is a unique culinary business that crafts extraordinary experiences and exceptional dishes, with a passion for fresh ingredients and culinary artistry. Our menu is inspired by traditional dishes and elevated with a contemporary twist. */}
                         </Typography>
                         <Button

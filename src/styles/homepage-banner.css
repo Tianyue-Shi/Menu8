@@ -1,0 +1,21 @@
+.banner-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    position: relative; /* To position text overlay */
+    min-height: 60vh; 
+  }
+  
+  .banner-text {
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute; 
+    color: black; 
+    padding: 20px; 
+    text-align: center; /* Center the text */
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+  }
+  
+  .about-section {
+    /* Add any necessary styling for the About Section */
+  } 
+  
