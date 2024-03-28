@@ -14,11 +14,14 @@ const Header = () => {
             </Typography>
           </Link>
         </Typography>
-        <Button color="inherit" variant="outlined">
+        <Button color="inherit" variant="outlined" component={Link} to="/menu">
           Menu
         </Button>
         <Button color="inherit" variant="outlined" component={Link} to="/contact">
           Contact
+        </Button>
+        <Button color="inherit" variant="outlined" component={Link} to="/cart">
+          Cart
         </Button>
       </Toolbar>
     </AppBar>

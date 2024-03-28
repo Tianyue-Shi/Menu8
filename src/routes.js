@@ -1,9 +1,11 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import AboutUs from './components/AboutUs';
-import HomePageBanner from './components/HomePageBanner';
-import ContactPage from './components/ContactPage';
-import ConfirmationPage from './components/ConfirmationPage';
+import AboutUs from './pages/AboutUs';
+import HomePageBanner from './pages/HomePageBanner';
+import ContactPage from './pages/ContactPage';
+import ConfirmationPage from './pages/ConfirmationPage';
+import MenuPage from './pages/MenuPage';
+import CartPage from './pages/CartPage';
 
 const AppRoutes = () => {
   return (
@@ -12,6 +14,9 @@ const AppRoutes = () => {
       <Route path="/about-us" element={<AboutUs />} /> 
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/confirmation" element={<ConfirmationPage />} />
+      <Route path="/menu" element={<MenuPage />} />
+      <Route path="/cart" element={<CartPage />} />
+
     </Routes>
   );
 };

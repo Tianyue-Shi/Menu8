@@ -16,7 +16,7 @@ function AboutSection() {
                     {/* Grid for the two-column layout */}
                     <Grid item xs={12} sm={6}>
                         <img
-                            src="/stock-image.png"
+                            src="/images/stock-image.png"
                             alt="About Us"
                             style={{ width: "100%" }}
                         />
@@ -31,8 +31,7 @@ function AboutSection() {
                         </Typography>
                         <Button
                             variant="contained"
-                            component={Link}
-                            to="/about-us"
+                            component={Link} to="/about-us"
                             style={{ marginTop: 15 }}
                             onClick={() => console.log('Button clicked!')}
                         >

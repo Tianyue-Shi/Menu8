@@ -5,6 +5,7 @@ import CssBaseline from '@mui/material/CssBaseline'; // CSS Reset
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom'; // Import BrowserRouter
+import { CartProvider } from './context/CartContext';
 
 const theme = createTheme({
   // Basic customization (more later) 
@@ -19,8 +20,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <ThemeProvider theme={theme}>
     <CssBaseline />
-    <BrowserRouter> {/*  Wrap your App component with BrowserRouter */}
-      <App />
+    <BrowserRouter>
+      <CartProvider>
+        <App />
+      </CartProvider>
     </BrowserRouter>
   </ThemeProvider>
 );
